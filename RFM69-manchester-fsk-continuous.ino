@@ -222,18 +222,14 @@ void transmitArray(uint8_t preamble, uint8_t *syncd, uint8_t numBytes, uint8_t *
       // if (i!=(numBytes-1) && j<=8)
       //  { // last byte
 
-      if ( (i == (numBytes - 1)) && ( j > 6))
-      {
-        //last byte
-      } else
-      {
+     
         if ((d & mask) == 0)
           sendZero();
         else
           sendOne();
         mask <<= 1; //get next bit
       }//end of byte
-    }
+    
 
   }//end of data - terminate with zero to be a good neighbour
   sendZero();
