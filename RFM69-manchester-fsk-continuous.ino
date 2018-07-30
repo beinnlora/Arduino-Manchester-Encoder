@@ -1,4 +1,4 @@
-// based on Radiohead library
+// Requires  Radiohead library
 //http://www.airspayce.com/mikem/arduino/RadioHead/
 
 #include <SPI.h>
